@@ -14,7 +14,7 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python-version: ["3.10", "3.11"]
 
-    runs-on: $
+    runs-on: ${{ matrix.os }}
 
     # a job is a seq of steps
     steps:
@@ -27,7 +27,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: $
+        python-version: ${{ matrix.python-version }}
 
     - name: Install Python dependencies
       run: |
