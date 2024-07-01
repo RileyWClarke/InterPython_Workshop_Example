@@ -3,7 +3,7 @@
 .idea/
 .ipynb_checkpoints/
 
-#MacOS
+# DS_Store
 .DS_Store
 
 # Intermediate Coverage file
@@ -18,4 +18,5 @@
 .pytest_cache
 
 # Virtual environments
-
+venv/
+.venv/
